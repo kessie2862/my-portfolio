@@ -1,45 +1,20 @@
-// import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-// import { AppWrap, MotionWrap } from '../../wrapper';
+import { AppWrap } from '../../wrapper';
 import './About.scss';
-// import { urlFor, client } from '../../client';
-
-import { images } from '../../constants';
+import { urlFor, client } from '../../client';
 
 const About = () => {
-  // const [abouts, setAbouts] = useState([]);
+  const [abouts, setAbouts] = useState([]);
 
-  // useEffect(() => {
-  //   const query = '*[_type == "abouts"]';
+  useEffect(() => {
+    const query = '*[_type == "abouts"]';
 
-  //   client.fetch(query).then((data) => {
-  //     setAbouts(data);
-  //   });
-  // }, []);
-
-  const abouts = [
-    {
-      title: 'Web Development',
-      description: 'I am a good developer',
-      imgUrl: images.about01,
-    },
-    {
-      title: 'Web Development',
-      description: 'I am a good developer',
-      imgUrl: images.about02,
-    },
-    {
-      title: 'Web Development',
-      description: 'I am a good developer',
-      imgUrl: images.about03,
-    },
-    {
-      title: 'Web Development',
-      description: 'I am a good developer',
-      imgUrl: images.about04,
-    },
-  ];
+    client.fetch(query).then((data) => {
+      setAbouts(data);
+    });
+  }, []);
 
   return (
     <>
@@ -57,7 +32,7 @@ const About = () => {
             className="app__profile-item"
             key={about.title + index}
           >
-            <img src={about.imgUrl} alt={about.title} />
+            <img src={urlFor(about.imgUrl)} alt={about.title} />
             <h2 className="bold-text" style={{ marginTop: 20 }}>
               {about.title}
             </h2>
@@ -77,4 +52,4 @@ const About = () => {
 //   'app__whitebg'
 // );
 
-export default About;
+export default AppWrap(About, 'about');
