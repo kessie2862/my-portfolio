@@ -68,6 +68,10 @@
     width: auto;
 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    h1 {
+      color: #37474f;
+    }
   }
 
   .tag-cmp {
@@ -78,6 +82,8 @@
       width: 100%;
       text-transform: uppercase;
       text-align: right;
+      color: #37474f;
+      font-weight: 500;
     }
   }
 
@@ -121,8 +127,8 @@
   // circles with different height & width
 
   div:nth-child(1) {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
 
   div:nth-child(2) {
