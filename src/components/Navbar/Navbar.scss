@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@400;700&display=swap');
+
 .app__navbar {
   width: 100%;
 
@@ -20,9 +22,12 @@
   justify-content: flex-start;
   align-items: center;
 
-  img {
+  h2 {
     width: 90px;
     height: 20px;
+    color: #178573;
+    font-family: 'Rowdies', cursive;
+    font-weight: 700;
 
     @media screen and (min-width: 2000px) {
       width: 180px;
