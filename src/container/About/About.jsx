@@ -19,8 +19,9 @@ const About = () => {
   return (
     <>
       <h2 className="head-text about-header">
-        I transform <span>ideas into</span> <br />
-        innovative <span>Software</span>
+        I turn <span>concepts</span> into
+        <br />
+        <span>Software</span> solutions
       </h2>
 
       <div className="app__profiles">
