@@ -61,7 +61,7 @@
 
   .badge-cmp,
   .tag-cmp {
-    padding: 1rem 2rem;
+    padding: 1.3rem;
     background: var(--white-color);
     border-radius: 15px;
     flex-direction: row;
@@ -71,6 +71,7 @@
 
     h1 {
       color: #37474f;
+      font-size: 1.5rem;
     }
   }
 
@@ -81,9 +82,14 @@
     p {
       width: 100%;
       text-transform: uppercase;
-      text-align: right;
+      text-align: left;
       color: #37474f;
-      font-weight: 500;
+      font-weight: 600;
+      font-size: 0.9rem;
+
+      span {
+        font-size: 0.9rem;
+      }
     }
   }
 
