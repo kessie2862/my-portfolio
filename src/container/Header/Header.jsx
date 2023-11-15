@@ -26,16 +26,19 @@ const Header = () => {
       >
         <div className="app__header-badge">
           <div className="badge-cmp app__flex">
-            <span>😎</span>
+            <span>👋</span>
             <div style={{ marginLeft: 20 }}>
               <p className="p-text">Hi, my name is</p>
-              <h1 className="head-text peekay">Prosper</h1>
+              <h1 className="head-text peekay">Prosper Kessie</h1>
             </div>
           </div>
 
           <div className="tag-cmp app__flex">
             <p className="p-text">
-              I'm a Full-Stack <br /> Software Developer
+              I'm full-stack{' '}
+              <span style={{ color: '#178573' }}>software developer</span>, with
+              a passion for crafting efficient software solutions that deliver
+              exceptional user experiences.{' '}
             </p>
             {/* <p className="p-text">Freelancer</p> */}
           </div>
