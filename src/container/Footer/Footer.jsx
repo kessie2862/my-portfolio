@@ -42,11 +42,11 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Take a coffee & chat with me</h2>
+      <h2 className="head-text">Let's have a chat.</h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
-          <img src={images.email} alt="email" />
+          <img src={images.gmail} alt="email" />
           <a href="kayp3477@gmail.com" className="p-text">
             kayp3477@gmail.com
           </a>
@@ -98,6 +98,7 @@ const Footer = () => {
           <h3 className="head-text">Thank you for getting in touch!</h3>
         </div>
       )}
+      <div className="down_footer">&copy; 2023 Made with 💖 by PK.</div>
     </>
   );
 };
