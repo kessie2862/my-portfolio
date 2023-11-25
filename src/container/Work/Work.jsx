@@ -41,7 +41,7 @@ const Work = () => {
   return (
     <>
       <h2 className="head-text">
-        My Creative <span>Portfolio</span> Section
+        My Creative <span>Projects</span>
       </h2>
 
       <div className="app__work-filter">
@@ -68,7 +68,11 @@ const Work = () => {
         {filterWork.map((work, index) => (
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img app__flex">
-              <img src={urlFor(work.imgUrl)} alt={work.name} />
+              {/* <img src={urlFor(work.imgUrl).url()} alt={work.name} /> */}
+              <img
+                src={work.imgUrl ? urlFor(work.imgUrl).url() : ''}
+                alt={work.name}
+              />
 
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
@@ -109,7 +113,7 @@ const Work = () => {
               </p>
 
               <div className="app__work-tag app__flex">
-                <p className="p-text">{work.tags[0]}</p>
+                <p className="p-text">{work.tags?.[0]}</p>
               </div>
             </div>
           </div>
