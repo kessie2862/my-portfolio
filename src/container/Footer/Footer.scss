@@ -62,6 +62,12 @@
   background-color: #f2f7fb;
 }
 
+.down_footer {
+  color: #178573;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
 .app__footer-cards .app__footer-card:last-child:hover {
   box-shadow: 0 0 25px #f2f7fb;
 }
@@ -119,7 +125,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: #2430af;
+      background-color: var(--secondary-color-hover);
     }
   }
 
